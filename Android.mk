@@ -131,7 +131,7 @@ LOCAL_CFLAGS += \
   -Dgenerate_uuid=busybox_generate_uuid
 LOCAL_ASFLAGS := $(BUSYBOX_AFLAGS)
 LOCAL_MODULE := libbusybox
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TAGS := eng debug
 LOCAL_STATIC_LIBRARIES := libcutils libc libm libselinux
 LOCAL_ADDITIONAL_DEPENDENCIES := $(busybox_prepare_minimal)
 include $(BUILD_STATIC_LIBRARY)
@@ -149,7 +149,7 @@ LOCAL_C_INCLUDES := $(bb_gen)/full/include $(BUSYBOX_C_INCLUDES)
 LOCAL_CFLAGS := $(BUSYBOX_CFLAGS)
 LOCAL_ASFLAGS := $(BUSYBOX_AFLAGS)
 LOCAL_MODULE := busybox
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TAGS := eng debug
 LOCAL_MODULE_PATH := $(TARGET_OUT_OPTIONAL_EXECUTABLES)
 LOCAL_SHARED_LIBRARIES := libc libcutils libm
 LOCAL_STATIC_LIBRARIES := libclearsilverregex libuclibcrpc libselinux
@@ -165,7 +165,7 @@ LOCAL_PATH := $(BB_PATH)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := busybox_links
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TAGS := eng debug
 
 # nc is provided by external/netcat
 BUSYBOX_EXCLUDE := nc
