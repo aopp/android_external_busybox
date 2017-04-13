@@ -93,7 +93,7 @@ BUSYBOX_C_INCLUDES = \
 	$(BB_PATH)/android/librpc
 
 BUSYBOX_CFLAGS = \
-	-Wno-clobbered \
+	-Werror=implicit -Wno-clobbered \
 	-DNDEBUG \
 	-DANDROID \
 	-fno-strict-aliasing \

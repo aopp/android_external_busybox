@@ -122,7 +122,6 @@
 /bin/mountpoint
 /bin/mpstat
 /bin/mv
-/sbin/nameif
 /sbin/nanddump
 /sbin/nandwrite
 /sbin/nbd-client
